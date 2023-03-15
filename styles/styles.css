@@ -1,25 +1,33 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: a;
+}
 
-.container{
-    border: 1px red;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
+.align {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr  1fr;
+      grid-template-columns: 1fr  1fr;
 }
-.gameOne, .gameTwo{
-    background-color: rgb(0, 0, 0);
-    width: 500px;
-    height: 500px;
-    margin: 15px;
-    display: flex;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.gameTwo{
-    background-color: rgb(0, 0, 0);
-    width: 500px;
-    height: 500px;
-    margin: 15px;
 
+.container-actions {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
 }
+
+.container-bg {
+  opacity: 0.5;
+}
+
+.container-bg,
+.container-actions {
+  grid-area: a;
+}
+/*# sourceMappingURL=styles.css.map */
