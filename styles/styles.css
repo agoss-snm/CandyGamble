@@ -1,0 +1,25 @@
+
+.container{
+    border: 1px red;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.gameOne, .gameTwo{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.gameTwo{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+
+}
