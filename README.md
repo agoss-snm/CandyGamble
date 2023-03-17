@@ -1,2 +1,14 @@
 # CandyGamble
-game project IronHack
+game project IronHack :grinning:
+
+## Technologies
+***
+A list of technologies used within the project:
+* [Sass](https://sass-lang.com/): Version 1.59.3 
+* [Bootstrap](https://getbootstrap.com/): Version .3.0-alpha1
+* [Javascript]
+
+
+## Team
+* ***Jose Vazquez
+* ***Agostina Romero
