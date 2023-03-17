@@ -1,14 +1,17 @@
-.container {
+.containerr {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: a;
+      grid-template-areas: 'a';
+  border-radius: 50px;
+  overflow: hidden;
 }
 
 .align {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr  1fr;
-      grid-template-columns: 1fr  1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
 }
 
 .container-actions {
@@ -24,10 +27,23 @@
 
 .container-bg {
   opacity: 0.5;
+  -webkit-box-shadow: 0 0.2rem 1.5rem #ce0404;
+          box-shadow: 0 0.2rem 1.5rem #ce0404;
+}
+
+.container-bg img {
+  width: 100%;
 }
 
 .container-bg,
 .container-actions {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: a;
+}
+
+.btn > a {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

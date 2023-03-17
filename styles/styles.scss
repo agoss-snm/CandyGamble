@@ -1,45 +1,58 @@
-.container {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: a;
+.containerr {
+  display: grid;
+  grid-template-areas: 'a';
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.align {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
+}
+
+.container-actions {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+
+}
+
+.container-bg {
+  opacity: 0.5;
+  box-shadow: 0 0.2rem 1.5rem #ce0404;
+
+  img {
+    width: 100%;
   }
-  
-  .align {
-    display: -ms-grid;
-    display: grid;
-      grid-template-columns: 1fr  1fr;
-  }
-  
-  .container-actions {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    opacity: 1;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .container-bg {
-    opacity: 0.5;
-  }
-  
-  .container-bg,
-  .container-actions {
-    grid-area: a;
-  }
 
+}
 
-  // codigo de candycrusher
+.container-bg,
+.container-actions {
+  grid-area: a;
+
+}
+
+.btn>a {
+  color: white;
+  text-decoration: none;
+}
+
+// codigo de candycrusher
 
 
 
 
 
-  //
+//
 
-  //slotscandy
+//slotscandy
 
 
-  //
+//
