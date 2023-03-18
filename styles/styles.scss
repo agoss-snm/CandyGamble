@@ -1,6 +1,6 @@
 .containerr {
   display: grid;
-  grid-template-areas: 'a';
+  grid-template-areas: "a";
   border-radius: 50px;
   overflow: hidden;
 }
@@ -20,7 +20,6 @@
   opacity: 1;
   position: relative;
   z-index: 1;
-
 }
 
 .container-bg {
@@ -30,29 +29,73 @@
   img {
     width: 100%;
   }
-
 }
 
 .container-bg,
 .container-actions {
   grid-area: a;
-
 }
 
-.btn>a {
+.btn > a {
   color: white;
   text-decoration: none;
 }
 
 // codigo de candycrusher
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+body {
+  background-color: lightcyan;
+  font-family: "Rocher", sans-serif;
+  text-align: center;
+  padding-top: 5%;
+}
 
+.title {
+  font-size: 3.5em;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
+.grid {
+  height: 560px;
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fbfbfb;
+  border: 10px solid #af8de9;
+  border-radius: 15px;
+  padding: 2%;
+  margin-top: 5%;
+}
 
+.grid div {
+  height: 70px;
+  width: 70px;
+}
 
+.score-display {
+  color: #521cad;
+  text-align: center;
+  font-size: 2rem;
+  padding-left: 2%;
+}
+
+.score-heading,
+#score {
+  margin: 0;
+}
 
 //
 
 //slotscandy
-
 
 //
