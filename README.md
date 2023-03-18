@@ -12,7 +12,7 @@ A list of technologies used within the project:
 * [FLEXBOX-CSS]
 * [GRID-CSS]
 * [HTML]
-
+* [Font Awesome Kit]: Version Latest 5.x
 
 ## Team
 ***
