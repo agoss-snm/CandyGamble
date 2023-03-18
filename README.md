@@ -1,5 +1,5 @@
 # CandyGamble
-game project IronHack :grinning:
+game project IronHack :grinning: responsive designed
 
 ## Technologies
 ***
