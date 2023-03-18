@@ -4,8 +4,8 @@
 }
 
 body {
-  background-color: white !important;
-  background: linear-gradient(rgba(197, 197, 197, 0.7),rgba(255, 222, 222, 0.7)), url("../src/candy-wall-background-1.png");
+  background: linear-gradient(rgba(197, 197, 197, 0.425),rgba(255, 222, 222, 0.7)), url("../src/candy-wall-background-1.png") ;
+  background-size: repeat;
 }
 
 .container-fluid > a{

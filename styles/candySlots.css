@@ -1,16 +1,29 @@
-html,
+@font-face {
+    font-family: "Rocher";
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  
+  html,
 body {
-    background: -webkit-gradient(linear, left top, left bottom, from(#8c7a7a), color-stop(65%, #af877c), to(#af877c)) fixed;
-    background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%) fixed;
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(197, 197, 197, 0.425),rgba(255, 222, 222, 0.7)),url("../src/candy-wall-background-1.png")repeat ;
     background-size: cover;
 }
+.style2 {
+    text-shadow: 0 0.2rem 0.5rem #ffffff;
+  }
+.style2 > a {
+    color: aliceblue;
+    font-family: "Rocher";
+    font-size: 2rem;
+    text-decoration: none;
+  }
+ 
+
 .btn>a {
     color: white;
     text-decoration: none;
   }
 #sectionOne {
-    color: #8a1886;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -55,13 +68,19 @@ body {
 }
 
 .navbar-brand {
-    color: white;
-    text-shadow: 0 0.2rem 0.5rem #ffffff;
+        color: white;
+        text-shadow: 0 0.2rem 0.5rem #ffffff;
+        font-family: "Rocher";
+}
+.navbar-brand{
+    font-size: 2rem !important;
 }
 .home {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2rem;
+    font-family: "Rocher";
+    text-shadow: 0 0.2rem 0.5rem #ffffff;
   }
 
 .card {
@@ -153,8 +172,7 @@ body {
     width: 20rem;
     height: 5rem;
     margin-top: 2vh;
-    background-color: #93ff20;
-    color: rgb(36, 36, 36);
+    font-size: 2rem;
 }
 
 #capa {
@@ -216,7 +234,8 @@ body {
 }
 
 .description p {
-    color: #ffffff;
+    color: #7a5a00;
+    font-size: 2rem;
 }
 
 #footerCard {
