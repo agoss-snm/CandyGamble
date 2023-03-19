@@ -3,7 +3,8 @@
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
 }
 body {
-  background-color: lightcyan ;
+  background: linear-gradient(rgba(197, 197, 197, 0.425),rgba(255, 222, 222, 0.7)),url("../src/candy-wall-background-1.png")repeat ;
+    background-size: cover;
   font-family: "Rocher", sans-serif;
   text-align: center ;
 }
