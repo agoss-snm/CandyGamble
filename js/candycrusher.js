@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const width = 8;
   const squares = [];
   const candyColors = [
-    "url(src/alternative-red.png)",
-    "url(src/alternative-yellow.png)",
-    "url(src/alternative-blue.png)",
-    "url(src/alternative-green.png)",
-    "url(src/alternative-orange.png)",
-    "url(src/alternative-purple.png)",
+    "url(../src/alternative-red.png)",
+    "url(../src/alternative-yellow.png)",
+    "url(../src/alternative-blue.png)",
+    "url(../src/alternative-green.png)",
+    "url(../src/alternative-orange.png)",
+    "url(../src/alternative-purple.png)",
   ];
   const scoreDisplay = document.querySelector("#score");
   let score = 0;

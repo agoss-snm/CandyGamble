@@ -3,98 +3,101 @@
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
 }
 body {
-  background-color: lightcyan !important;
-  font-family: "Rocher", sans-serif  !important;
-  text-align: center !important;
+  background-color: lightcyan ;
+  font-family: "Rocher", sans-serif;
+  text-align: center ;
 }
 /*navbar*/
 .container-fluid > a {
-  font-family: "Rocher" !important;
-  font-size: 2rem !important;
+  font-family: "Rocher" ;
+  font-size: 2rem ;
 }
-.navbar-light .navbar-brand{
-  color: solid !important;
-  color:rgba(0, 0, 0, 1) !important;
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between
 }
+
 .navbar-brand {
-  color: white !important;
-  text-shadow: 0 0.2rem 0.5rem #ffffff !important;
+  color: white ;
+  text-shadow: 0 0.2rem 0.5rem #ffffff ;
 }
 spam {
   color: #ffd311 !important;
 }
-.navbar-collapse{
-  flex-grow: 0 !important;
+.navbar-brand{
+ display: flex;
 }
+
 .style2 {
   width: auto;
   height: 9vh;
-  text-shadow: 0 0.2rem 0.5rem #ffffff;
-}
-
-.style2 > a {
-  color: aliceblue;
-  font-family: "Rocher";
-  font-size: 2rem;
+  text-shadow: 0 0.2rem 0.5rem #ffffff ;
+  color: aliceblue ;
+  font-family: "Rocher" ;
+  font-size: 2rem ;
   text-decoration: none;
 }
 
 
+
 /**/
 .title {
-  font-size: 3.5em !important;
-  margin: auto;
+  font-size: 3.5em;
+  margin: auto ;
 }
 .container {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin: 0 auto !important;
+  display: flex ;
+  flex-direction: row ;
+  justify-content: center ;
+  align-items: center ;
+  margin: 0 auto ;
 }
 
 .grid {
-  height: 560px !important;
+  height: 560px ;
   width: 560px;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex ;
+  flex-wrap: wrap ;
   background-color: #fbfbfb;
-  border: 10px solid #af8de9;
-  border-radius: 15px;
-  padding: 2%;
-  margin-top: 5%;
+  border: 5px solid #af8de9 ;
+  border-radius: 15px ;
+  padding: 2% ;
+  margin-top: 5% ;
 }
 
 .grid div {
-  height: 70px;
-  width: 70px;
+  height: 70px ;
+  width: 70px ;
 }
 
 p.instructions {
-  font-size: 1.5rem;
-  padding-bottom: 20px;
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
+  font-size: 1.5rem ;
+  padding-bottom: 20px ;
+  width: 50% ;
+  text-align: center ;
+  margin: 0 auto ;
 }
 .score-display {
-  padding-left: 2%;
+  padding-left: 2% ;
 }
 
 #score {
-  margin: 0;
-  font-size: 3rem;
+  margin: 0 ;
+  font-size: 3rem ;
 }
 
 h1#moves {
-  margin: 0;
-  text-align: center;
-  font-size: 3rem;
+  margin: 0 ;
+  text-align: center ;
+  font-size: 3rem ;
 }
 
 h3.moves-heading,
 .score-heading {
-  margin: 20px;
+  margin: 20px ;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3rem ;
 }
+
