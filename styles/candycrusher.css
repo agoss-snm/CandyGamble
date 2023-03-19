@@ -3,14 +3,14 @@
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
 }
 body {
-  background-color: lightcyan;
-  font-family: "Rocher", sans-serif;
-  text-align: center;
-  padding-top: 5%;
+  background-color: lightcyan ;
+  font-family: "Rocher", sans-serif ;
+  text-align: center ;
+  padding-top: 5% ;
 }
 
 .title {
-  font-size: 3.5em;
+  font-size: 3.5em ;
   margin: auto;
 }
 .container {
