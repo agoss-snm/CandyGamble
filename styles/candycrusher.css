@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+body {
+  background-color: lightcyan;
+  font-family: "Rocher", sans-serif;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.title {
+  font-size: 3.5em;
+  margin: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.grid {
+  height: 560px;
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fbfbfb;
+  border: 10px solid #af8de9;
+  border-radius: 15px;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
+}
+
+p.instructions {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+.score-display {
+  padding-left: 2%;
+}
+
+#score {
+  margin: 0;
+  font-size: 3rem;
+}
+
+h1#moves {
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h3.moves-heading,
+.score-heading {
+  margin: 20px;
+  text-align: center;
+  font-size: 3rem;
+}

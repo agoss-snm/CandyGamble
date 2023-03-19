@@ -1,16 +1,19 @@
 # CandyGamble
-game project IronHack :grinning: responsive designed
+Game proyect Ironhack. Pair Programming :yellow_heart:
 
 ## Technologies
 ***
 A list of technologies used within the project:
-* [Sass](https://sass-lang.com/): Version 1.59.3 
-* [Bootstrap](https://getbootstrap.com/): Version .3.0-alpha1
+* [SASS](https://sass-lang.com/): Version  1.59.3.
+* [BOOTSTRAP](https://getbootstrap.com/): Version 5.3.0-alpha1
+* [Normalize](https://necolas.github.io/normalize.css/): Version v8.0.1
 * [Javascript]
-* [CSS-Grid]
-* [CSS-Flexbox]
-
+* [FLEXBOX-CSS]
+* [GRID-CSS]
+* [HTML]
+* [Font Awesome Kit]: Version Latest 5.x
 
 ## Team
-* ***Jose Vazquez
-* ***Agostina Romero
+***
+* Jose Vazquez
+* Agostina Romero
