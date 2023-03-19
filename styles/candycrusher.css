@@ -3,26 +3,58 @@
   src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
 }
 body {
-  background-color: lightcyan ;
-  font-family: "Rocher", sans-serif ;
-  text-align: center ;
-  padding-top: 5% ;
+  background-color: lightcyan !important;
+  font-family: "Rocher", sans-serif  !important;
+  text-align: center !important;
+}
+/*navbar*/
+.container-fluid > a {
+  font-family: "Rocher" !important;
+  font-size: 2rem !important;
+}
+.navbar-light .navbar-brand{
+  color: solid !important;
+  color:rgba(0, 0, 0, 1) !important;
+}
+.navbar-brand {
+  color: white !important;
+  text-shadow: 0 0.2rem 0.5rem #ffffff !important;
+}
+spam {
+  color: #ffd311 !important;
+}
+.navbar-collapse{
+  flex-grow: 0 !important;
+}
+.style2 {
+  width: auto;
+  height: 9vh;
+  text-shadow: 0 0.2rem 0.5rem #ffffff;
 }
 
+.style2 > a {
+  color: aliceblue;
+  font-family: "Rocher";
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+
+/**/
 .title {
-  font-size: 3.5em ;
+  font-size: 3.5em !important;
   margin: auto;
 }
 .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
 }
 
 .grid {
-  height: 560px;
+  height: 560px !important;
   width: 560px;
   display: flex;
   flex-wrap: wrap;
