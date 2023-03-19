@@ -18,7 +18,11 @@ body {
     text-decoration: none;
   }
  
-
+  .fas{
+    color: #f7b017;
+    margin-right: 1em;
+  }
+  
 .btn>a {
     color: white;
     text-decoration: none;
@@ -30,6 +34,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #sectionOne img {
@@ -57,7 +62,7 @@ body {
 
 .balance {
     --tw-text-opacity: 1;
-    color: #444444;
+    color: #444444bb;
     font-size: 2vh;
     margin-right: 10px;
     display: flex;
@@ -133,16 +138,16 @@ body {
     margin-right: 1rem;
     width: 5rem;
     height: 5rem;
-    border: 2px solid #fff;
+    border: 2px solid #ffd4f1;
     border-radius: 10px;
     font-size: 2rem;
     font-weight: bold;
-    color: #333;
+    color: #9e5d5d;
     background-color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 0 0.2rem 0.5rem #AAAAAA;
-    box-shadow: 0 0.2rem 0.5rem #AAAAAA;
+    -webkit-box-shadow: 0 0.5rem 0.7rem #e403ac;
+    box-shadow: 0 0.2rem 0.5rem #ff77f8;
 }
 
 .slot:last-child {
@@ -176,11 +181,9 @@ body {
 }
 
 #capa {
-    background-color: #545454;
-    border: 3px solid #ff20aa;
+    background-color: #ececec77;
+    border: 3px solid #ff20a9b2;
     border-radius: 10px;
-    -webkit-box-shadow: 0 0.2rem 0.5rem #AAAAAA;
-    box-shadow: 0 0.2rem 0.5rem #AAAAAA;
     width: 500px;
     height: 700px;
     -ms-flex-line-pack: center;
@@ -221,7 +224,7 @@ body {
 }
 
 .alert {
-    color: yellow;
+    color: rgb(56, 56, 30);
     font-size: 25px;
     height: 20px;
     align-items: center;
