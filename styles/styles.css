@@ -22,14 +22,6 @@ body {
   overflow: hidden;
 }
 
-.home {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: "Rocher";
-  text-shadow: 0 0.2rem 0.5rem #ffffff;
-}
-
 .align {
   display: -ms-grid;
   display: grid;

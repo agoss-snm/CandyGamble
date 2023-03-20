@@ -2,7 +2,9 @@
     font-family: "Rocher";
     src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
   }
-  
+  @import url('https://fonts.cdnfonts.com/css/kwizi');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+  @import url('https://fonts.cdnfonts.com/css/poppins');
   html,
 body {
     background: linear-gradient(rgba(197, 197, 197, 0.425),rgba(255, 222, 222, 0.7)),url("../src/candy-wall-background-1.png")repeat ;
@@ -37,9 +39,10 @@ body {
     flex-direction: column;
 }
 
+
 #sectionOne img {
     padding: 20px;
-    width: 50vh;
+    width: 60vh;
     left: 50%;
     right: 50%;
     -webkit-animation: float 3s ease-out infinite;
@@ -146,8 +149,7 @@ body {
     background-color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-box-shadow: 0 0.5rem 0.7rem #e403ac;
-    box-shadow: 0 0.2rem 0.5rem #ff77f8;
+    box-shadow: 0 0.2rem 0.8rem #680045;
 }
 
 .slot:last-child {
@@ -178,10 +180,28 @@ body {
     height: 5rem;
     margin-top: 2vh;
     font-size: 2rem;
+    font-family: Pacifico;
+    padding: 0 6px 8px;
+    min-width: 220px;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-style: solid;
+  border-color: #069A09;
+  border-width: 3px 3px 4px;
+  text-shadow: 3px 2px 0 rgba(0,0,0,.3);
+  border-radius: 40px;
+  text-shadow: 3px 2px 0 rgba(0,0,0,.3);
+  background:  linear-gradient(#4EC445,#069A09);
 }
 
+
 #capa {
-    background-color: #ececec77;
+  background: linear-gradient(rgba(197, 23, 23, 0.425), rgba(255, 222, 222, 0.7)), url("../src/wallpaper1.jpg");
+  background-size: repeat;
     border: 3px solid #ff20a9b2;
     border-radius: 10px;
     width: 500px;
@@ -230,25 +250,41 @@ body {
     align-items: center;
     position: absolute;
     z-index: 1;
+    font-family: "Rocher";
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.situation{
+    align-items: center;
+    z-index: 1;
+    font-family: "Rocher";
+    font-size: 2em;
 }
 
 .description {
     text-align: center;
+    color: #585e11;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;   
+    font-weight: bold;
 }
 
-.description p {
-    color: #7a5a00;
-    font-size: 2rem;
-}
 
 #footerCard {
     text-align: center;
     color: white;
-    font-size: 3vh;
-    background-color: #ff20aa;
+    font-size: 5vh;
+    background:  linear-gradient(#FE4495,#d5095f);
     border-radius: 5%;
     width: 100px;
     height: 50px;
+    font-family: 'Kwizi', sans-serif;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 @media (min-width: 360px) and (max-width: 599px) {
@@ -260,11 +296,16 @@ body {
         align-items: center;
         -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
+        margin-top: 150px;
     }
 
     #capa {
         width: 200px;
         height: 300px;
+    
+    }
+    .description{
+        margin-top: 100px;
     }
 }
 

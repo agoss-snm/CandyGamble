@@ -1,9 +1,15 @@
 const message = document.querySelector('.alert');
+const message2=document.querySelector('.situation');
 const slot1 = document.querySelector('#slot1');
 const slot2 = document.querySelector('#slot2');
 const slot3 = document.querySelector('#slot3');
 const spinButton = document.querySelector('.btnGame');
 const footerCard= document.querySelector('#footerCard')
+
+
+let boton = document.querySelector(".reproductor")
+
+
 
 let availableMoney = 100; 
 footerCard.textContent = `$${availableMoney}`;
@@ -12,11 +18,12 @@ function getRandomNumber() {
   return Math.floor(Math.random() * 3);
 }
 
+
 // Función para actualizar el estado del juego después de cada tirada
 function updateGameState(randomNumbers) {
   if (randomNumbers[0] === randomNumbers[1] && randomNumbers[1] === randomNumbers[2]) {
-    // Asigna un premio
     availableMoney += 50; 
+    footerCard.textContent = `$${availableMoney}`;
     if (availableMoney >= 200) {
       showWinningMessage();
       return;
@@ -24,16 +31,13 @@ function updateGameState(randomNumbers) {
     showPrizeMessage(); 
     hidePrizeMessage() 
   } else {
-    // Resta $5 del dinero disponible 
     availableMoney -= 5;
     if (availableMoney < 0) {
       showLosingMessage();
       return;
     }
+    footerCard.textContent = `$${availableMoney}`;
   }
-
-  // Actualiza el texto del botón Spin
-  footerCard.textContent = `$${availableMoney}`;
 }
 
 // Mensaje premio
@@ -51,7 +55,6 @@ function hidePrizeMessage() {
 
 //mensajes de victoria o derrota
 function showWinningMessage() {
-  message.textContent = "¡congratulations, you've won the game!!";
   spinButton.disabled = true; 
 }
 
@@ -107,9 +110,18 @@ function spin() {
 
   if (availableMoney >= 200) {
     message.textContent = "¡congratulations, you've won the game!!"
+    message2.textContent= "¡congratulations, you've won the game!!"
     spinButton.disabled = true;
   }
 }
 
 //Controlador de eventos.
 spinButton.addEventListener("click", spin);
+
+
+
+spinButton.addEventListener("click", () => {
+  let etiquetaAudio = document.createElement("audio")
+  etiquetaAudio.setAttribute("src", "../Sound/sfx-cartoons.mp3")
+  etiquetaAudio.play()
+})
