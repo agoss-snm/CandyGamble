@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function dragStart() {
     if (moves <= 0) {
       moveCounter.innerHTML = "Game Over"; //// this changes to GAME OVER after 0. you have to drag one more in order for the gfame over to appear
-      // const sound = new Audio("/Sound/178875__rocotilos__you-lose-evil.wav");
-      // console.log(sound);
-      // sound.play();
-      // sound.volume = 0.7;
+      const sound = new Audio("/Sound/178875__rocotilos__you-lose-evil.wav");
+      console.log(sound);
+      sound.play();
+      sound.volume = 0.7;
       squares.forEach((square) => {
         square.removeEventListener("dragstart", dragStart);
         square.removeEventListener("dragend", dragEnd);
@@ -135,11 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreDisplay.innerHTML = score;
         rowOfThree.forEach((index) => {
           squares[index].style.backgroundImage = "";
-          // const sound = new Audio(
-          //   "/Sound/104944__glaneur-de-sons__bubble-5.wav"
-          // );
-          // sound.play();
-          // sound.volume = 0.7;
+          const sound = new Audio(
+            "/Sound/104944__glaneur-de-sons__bubble-5.wav"
+          );
+          sound.play();
+          sound.volume = 0.7;
         });
       }
       if (score >= 40) {
@@ -182,11 +182,11 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreDisplay.innerHTML = score;
         columnOfThree.forEach((index) => {
           squares[index].style.backgroundImage = "";
-          // const sound = new Audio(
-          //   "/Sound/104944__glaneur-de-sons__bubble-5.wav"
-          // );
-          // sound.play();
-          // sound.volume = 0.7;
+          const sound = new Audio(
+            "/Sound/104944__glaneur-de-sons__bubble-5.wav"
+          );
+          sound.play();
+          sound.volume = 0.7;
         });
       }
     }
@@ -215,11 +215,11 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreDisplay.innerHTML = score;
         rowOfFour.forEach((index) => {
           squares[index].style.backgroundImage = "";
-          // const sound = new Audio(
-          //   "/Sound/406084__deleted_user_4128231__bubblebeam.wav"
-          // );
-          // sound.play();
-          // sound.volume = 0.8;
+          const sound = new Audio(
+            "/Sound/406084__deleted_user_4128231__bubblebeam.wav"
+          );
+          sound.play();
+          sound.volume = 0.8;
         });
       }
     }
@@ -241,11 +241,11 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreDisplay.innerHTML = score;
         columnOfFour.forEach((index) => {
           squares[index].style.backgroundImage = "";
-          // const sound = new Audio(
-          //   "/Sound/406084__deleted_user_4128231__bubblebeam.wav"
-          // );
-          // sound.play();
-          // sound.volume = 0.7;
+          const sound = new Audio(
+            "/Sound/406084__deleted_user_4128231__bubblebeam.wav"
+          );
+          sound.play();
+          sound.volume = 0.7;
         });
       }
     }
