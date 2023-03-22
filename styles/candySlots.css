@@ -316,6 +316,21 @@ body {
     .description {
         margin-top: 100px;
     }
+    #footerCard {
+        margin-left: 100px;
+        text-align: center;
+        color: white;
+        font-size: 5vh;
+        background: linear-gradient(#FE4495, #d5095f);
+        border-radius: 5%;
+        width: 100px;
+        height: 50px;
+        font-family: 'Kwizi', sans-serif;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
