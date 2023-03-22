@@ -258,11 +258,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   checkColumnOfFour();
 
-  window.setInterval(function () {
+  const myInterval= window.setInterval(function () {
     checkRowOfFour();
     checkColumnOfFour();
     checkRowOfThree();
     checkColumnOfThree();
     moveDown();
   }, 100);
+  function myStopFunction(){
+    clearInterval(myInterval);
+    return myStopFunction();
+  }
 });
