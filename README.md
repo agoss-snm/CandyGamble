@@ -1,5 +1,7 @@
 # CandyGamble
 Game proyect Ironhack. Pair Programming :yellow_heart:
+https://agoss-snm.github.io/CandyGamble/index.html
+https://www.canva.com/design/DAFdrPAWOXs/jKhff1nBw9M3uXN7iqBTeA/view?utm_content=DAFdrPAWOXs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 
 ## Technologies
 ***
