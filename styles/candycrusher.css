@@ -103,16 +103,19 @@ h3.moves-heading,
 }
 
 
-/*
+
 
 
 @media (min-width: 360px) and (max-width: 599px) {
-  
-  
+  .grid{
+  overflow: hidden;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
- 
+  .grid{
+ overflow: hidden;
+  }
 }
 
-*/
+

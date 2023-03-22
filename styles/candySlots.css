@@ -204,6 +204,7 @@ body {
     text-shadow: 3px 2px 0 rgba(0, 0, 0, .3);
     background: linear-gradient(#4EC445, #069A09);
     z-index: 100;
+    position: absolute !important;
 }
 
 
@@ -331,6 +332,15 @@ body {
         align-content: center;
         justify-content: center;
     }
+
+    .btnGame{
+        margin-bottom: 200px;
+        position: absolute !important;
+    }
+.balance{
+    margin-top: 200px;
+}
+
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
