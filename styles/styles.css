@@ -217,7 +217,8 @@ spam {
   list-style: none;
 }
 
-.second a, .second2 a {
+.second a,
+.second2 a {
   color: #cecece;
   text-decoration: none;
   letter-spacing: 3px;
@@ -227,7 +228,8 @@ spam {
   transition: 0.2s;
 }
 
-.second a:hover, .second2 a:hover {
+.second a:hover,
+.second2 a:hover {
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;

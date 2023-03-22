@@ -1,35 +1,30 @@
 const message = document.querySelector('.alert');
-const message2=document.querySelector('.situation');
+const message2 = document.querySelector('.situation');
 const slot1 = document.querySelector('#slot1');
 const slot2 = document.querySelector('#slot2');
 const slot3 = document.querySelector('#slot3');
 const spinButton = document.querySelector('.btnGame');
-const footerCard= document.querySelector('#footerCard')
-
+const footerCard = document.querySelector('#footerCard')
 
 let boton = document.querySelector(".reproductor")
 
-
-
-let availableMoney = 100; 
+let availableMoney = 100;
 footerCard.textContent = `$${availableMoney}`;
 // Generara un número aleatorio entre 0 y 2 
 function getRandomNumber() {
   return Math.floor(Math.random() * 3);
 }
-
-
 // Función para actualizar el estado del juego después de cada tirada
 function updateGameState(randomNumbers) {
   if (randomNumbers[0] === randomNumbers[1] && randomNumbers[1] === randomNumbers[2]) {
-    availableMoney += 50; 
+    availableMoney += 50;
     footerCard.textContent = `$${availableMoney}`;
     if (availableMoney >= 200) {
       showWinningMessage();
       return;
     }
-    showPrizeMessage(); 
-    hidePrizeMessage() 
+    showPrizeMessage();
+    hidePrizeMessage()
   } else {
     availableMoney -= 5;
     if (availableMoney < 0) {
@@ -39,7 +34,6 @@ function updateGameState(randomNumbers) {
     footerCard.textContent = `$${availableMoney}`;
   }
 }
-
 // Mensaje premio
 function showPrizeMessage() {
   setTimeout(function () {
@@ -52,17 +46,14 @@ function hidePrizeMessage() {
     message.textContent = "";
   }, 1000);
 }
-
 //mensajes de victoria o derrota
 function showWinningMessage() {
-  spinButton.disabled = true; 
+  spinButton.disabled = true;
 }
-
 function showLosingMessage() {
   message.textContent = "I'm sorry, you've lost the game";
-  spinButton.disabled = true; 
+  spinButton.disabled = true;
 }
-
 function spin() {
   if (availableMoney < 5) {
     showLosingMessage();
@@ -102,24 +93,20 @@ function spin() {
     slot3.innerHTML = `<img src="../src/candy3.png" alt="50px" width="50px">`;
   }
 
-//actualizador de estado
+  //actualizador de estado
   updateGameState(randomNumbers);
 
-//fin del juego
+  //fin del juego
 
 
   if (availableMoney >= 200) {
     message.textContent = "¡congratulations, you've won the game!!"
-    message2.textContent= "¡congratulations, you've won the game!!"
+    message2.textContent = "¡congratulations, you've won the game!!"
     spinButton.disabled = true;
   }
 }
-
 //Controlador de eventos.
 spinButton.addEventListener("click", spin);
-
-
-
 spinButton.addEventListener("click", () => {
   let etiquetaAudio = document.createElement("audio")
   etiquetaAudio.setAttribute("src", "../Sound/sfx-cartoons.mp3")

@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
           sound.volume = 0.7;
 
 
-    
+
         });
       }
     }
@@ -258,14 +258,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   checkColumnOfFour();
 
-  const myInterval= window.setInterval(function () {
+  const myInterval = window.setInterval(function () {
     checkRowOfFour();
     checkColumnOfFour();
     checkRowOfThree();
     checkColumnOfThree();
     moveDown();
   }, 100);
-  function myStopFunction(){
+  function myStopFunction() {
     clearInterval(myInterval);
     return myStopFunction();
   }

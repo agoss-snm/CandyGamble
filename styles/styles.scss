@@ -9,7 +9,7 @@ body {
   background-size: repeat;
 }
 
-.container-fluid > a {
+.container-fluid>a {
   font-family: "Rocher";
   font-size: 2rem;
 }
@@ -17,7 +17,7 @@ body {
 .containerr {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'a';
+  grid-template-areas: 'a';
   border-radius: 50px;
   overflow: hidden;
 }
@@ -62,7 +62,7 @@ body {
 
 .fas {
   color: #f7b017;
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .container-bg,
@@ -78,7 +78,7 @@ body {
   text-shadow: 0 0.2rem 0.5rem #ffffff;
 }
 
-.style2 > a {
+.style2>a {
   color: aliceblue;
   font-family: "Rocher";
   font-size: 2rem;
@@ -93,17 +93,21 @@ body {
 .blue {
   text-shadow: 0 0.5rem 0.2rem #0c2d5f;
 }
-.navbar-collapse{
+
+.navbar-collapse {
   flex-grow: 0 !important;
 }
+
 .pink {
   text-shadow: 0 0.5rem 0.5rem #a0003e;
 }
-.navbar-light .navbar-brand{
+
+.navbar-light .navbar-brand {
   color: solid !important;
-  color:rgba(0, 0, 0, 1) !important;
+  color: rgba(0, 0, 0, 1) !important;
 }
-.btn > .play {
+
+.btn>.play {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
@@ -114,6 +118,7 @@ body {
   color: white;
   text-shadow: 0 0.2rem 0.5rem #ffffff;
 }
+
 spam {
   color: #ffd311;
 }
@@ -212,7 +217,8 @@ spam {
   list-style: none;
 }
 
-.second a, .second2 a {
+.second a,
+.second2 a {
   color: #cecece;
   text-decoration: none;
   letter-spacing: 3px;
@@ -222,7 +228,8 @@ spam {
   transition: 0.2s;
 }
 
-.second a:hover, .second2 a:hover {
+.second a:hover,
+.second2 a:hover {
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -277,6 +284,7 @@ spam {
   .first {
     text-align: center;
   }
+
   .first h4::after {
     left: 40%;
   }
@@ -286,6 +294,7 @@ spam {
   .third {
     text-align: center;
   }
+
   .third h4::after {
     left: 40% !important;
   }
