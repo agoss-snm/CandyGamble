@@ -187,6 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
           );
           sound.play();
           sound.volume = 0.7;
+
+
+    
         });
       }
     }
@@ -220,6 +223,9 @@ document.addEventListener("DOMContentLoaded", () => {
           );
           sound.play();
           sound.volume = 0.8;
+          if (score >= 40) {
+            scoreDisplay.innerHTML = "You win";
+          }
         });
       }
     }
