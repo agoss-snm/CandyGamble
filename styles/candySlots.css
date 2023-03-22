@@ -203,6 +203,7 @@ body {
     border-radius: 40px;
     text-shadow: 3px 2px 0 rgba(0, 0, 0, .3);
     background: linear-gradient(#4EC445, #069A09);
+    z-index: 100;
 }
 
 
